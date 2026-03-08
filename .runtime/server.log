@@ -1,0 +1,32 @@
+
+> my-project@0.1.0 start
+> npm run build && cross-env NODE_ENV=production node server/index.js
+
+(node:15392) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+> my-project@0.1.0 build C:\Users\vika_\OneDrive\Desktop\getex
+> next build
+
+▲ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 3.7s
+  Skipping validation of types
+  Collecting page data using 23 workers ...
+  Generating static pages using 23 workers (0/3) ...
+✓ Generating static pages using 23 workers (3/3) in 833.3ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+└ ○ /_not-found
+
+
+○  (Static)  prerendered as static content
+
+Getex running at https://localhost:3000
+External access enabled at https://0.0.0.0:3000
+Using in-memory MongoDB instance
+Mongo connected: mongodb://127.0.0.1:57581/
+^C

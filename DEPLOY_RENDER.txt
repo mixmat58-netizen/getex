@@ -1,0 +1,16 @@
+Render test deploy
+
+1. Push this project to GitHub.
+2. Create a MongoDB Atlas free cluster.
+3. In Atlas, add a database user and allow network access from 0.0.0.0/0.
+4. Copy the Atlas connection string and replace the placeholders in MONGO_URI.
+5. In Render, create a new Blueprint or Web Service from this repository.
+6. If using Blueprint, keep render.yaml and fill these env vars when prompted:
+   - APP_ORIGIN: your Render URL, for example https://getex.onrender.com
+   - MONGO_URI: your Atlas connection string
+7. Deploy.
+
+Notes
+- Render free is fine for testing but not for permanent production use.
+- HTTPS must stay false inside the app because Render terminates TLS at the edge.
+- WebRTC signaling will work, but stable calls still need a TURN server.
